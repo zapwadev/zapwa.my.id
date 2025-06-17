@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script type="text/javascript">
+    // Get the current path from the URL.
+    var path = window.location.pathname;
+
+    // The segment of the path that needs to be preserved.
+    var segment = path.split('/').pop();
+
+    // Redirect to the index.html with the path information.
+    window.location.replace(
+      window.location.protocol + '//' + window.location.hostname + (window.location.port ? ':' + window.location.port : '') + '/my-repo/?/' + segment
+    );
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

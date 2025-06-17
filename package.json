@@ -2,6 +2,8 @@
   "name": "zapwa.my.id",
   "private": true,
   "type": "module",
+  "homepage": "https://www.zapwa.my.id",
+
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",

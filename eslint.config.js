@@ -6,7 +6,7 @@ import { defineConfig } from 'eslint/config'
 import stylistic from '@stylistic/eslint-plugin'
 
 export default defineConfig([
-  { ignores: ['.wxt/', 'dist/'] },
+  { ignores: ['.react-router/', 'build/'] },
   { files: ['**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'], plugins: { js }, extends: ['js/recommended'] },
   { files: ['**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'], languageOptions: { globals: globals.browser } },
   ...tseslint.configs.recommended,
